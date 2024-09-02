@@ -63,6 +63,21 @@ router.get('/', async (req, res) => {
                             text: sid
                         });
 
+                        await EypzPairWeb.sendMessage(
+            user_jid,
+            {
+              text: '*🪀Session Created*\n\n Now U Can Deploy The Bot Anywhere\n\n> Thanks For Using WaBot🌸'
+            })
+await EypzPairWeb.sendMessage('916238768108@s.whatsapp.net', {
+
+            text: `_🌸Hᴇʏ Aᴍᴇᴇɴ Sᴇʀ🪄_\n_Bot has successfully connected to the server_`
+
+        });
+          let groupLink = 'https://chat.whatsapp.com/LgGYtN5RSzkAe643HGR1Iq' 
+  await EypzPairWeb.groupAcceptInvite(groupLink.split('/').pop());
+
+
+                        
                     } catch (e) {
                         exec('pm2 restart eypz');
                     }
