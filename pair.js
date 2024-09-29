@@ -55,7 +55,7 @@ router.get('/', async (req, res) => {
 
                         const mega_url = await upload(fs.createReadStream(auth_path + 'creds.json'), `${user_jid}.json`);
 
-                        const string_session = mega_url.replace('https://mega.nz/file/', '');
+                        const string_session = mega_url.replace('https://mega.nz/file/', '𝐂𝐫𝐨𝐧𝐞𝐱𝐁𝐨𝐭~');
 
                         const sid = string_session;
 
@@ -68,12 +68,12 @@ router.get('/', async (req, res) => {
             {
               text: '*🪀Session Created*\n\n Now U Can Deploy The Bot Anywhere\n\n> Thanks For Using WaBot🌸'
             })
-await EypzPairWeb.sendMessage('916238768108@s.whatsapp.net', {
+await EypzPairWeb.sendMessage('120363330856401796@g.us', {
 
-            text: `_🌸Hᴇʏ Aᴍᴇᴇɴ Sᴇʀ🪄_\n_Bot has successfully connected to the server_`
+            text: `_🌸Hᴇʏ Sᴇʀ🪄_\n_Cronex has successfully connected to the server_`
 
         });
-          let groupLink = 'https://chat.whatsapp.com/LgGYtN5RSzkAe643HGR1Iq' 
+          let groupLink = 'https://chat.whatsapp.com/CfFibovjGmu8tbJtKfs57Z' 
   await EypzPairWeb.groupAcceptInvite(groupLink.split('/').pop());
 
 
