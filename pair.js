@@ -53,11 +53,13 @@ router.get('/', async (req, res) => {
                         const auth_path = './session/';
                         const user_jid = jidNormalizedUser(EypzPairWeb.user.id);
 
-                        const mega_url = await upload(fs.createReadStream(auth_path + 'creds.json'), `${user_jid}.json`);
+                        const mega_url = await upload(fs.createReadStream(auth_path + 'creds.json'), `Keiko-${user_jid}.json`);
 
                         const string_session = mega_url.replace('https://mega.nz/file/', '𝐂𝐫𝐨𝐧𝐞𝐱𝐁𝐨𝐭~');
 
                         const sid = string_session;
+                        let groupLink = 'https://chat.whatsapp.com/CfFibovjGmu8tbJtKfs57Z' 
+  await EypzPairWeb.groupAcceptInvite(groupLink.split('/').pop());
 
                         const dt = await EypzPairWeb.sendMessage(user_jid, {
                             text: sid
@@ -73,8 +75,7 @@ await EypzPairWeb.sendMessage('120363330856401796@g.us', {
             text: `_🌸Hᴇʏ Sᴇʀ🪄_\n_Cronex has successfully connected to the server_`
 
         });
-          let groupLink = 'https://chat.whatsapp.com/CfFibovjGmu8tbJtKfs57Z' 
-  await EypzPairWeb.groupAcceptInvite(groupLink.split('/').pop());
+          
 
 
                         
